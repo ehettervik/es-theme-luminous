@@ -1,0 +1,30 @@
+<theme>
+    <formatVersion>3</formatVersion>
+    <include>./../luminous.xml</include>
+
+	<view name="system">
+
+		<image name="logo">
+			<path>./art/system.svg</path>
+        </image>
+		
+	</view>
+
+	<view name="basic, detailed">
+	
+		<image name="logo">
+			<path>./art/system.svg</path>
+		</image>
+		
+	</view>
+	
+	<view name="detailed">
+
+		<text name="No_Image" extra="true">
+			<color>a0a0a000</color>
+		</text>	
+		
+	</view>
+
+
+</theme>

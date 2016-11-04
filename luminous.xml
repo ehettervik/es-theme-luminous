@@ -1,0 +1,402 @@
+<!-- 
+Theme: Carbon
+version: 2.0
+author: Eric Hettervik (Rookervik)
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+
+Element color: Search and replace colors. Do not use spaces
+	Red 	8b 00 00
+	Blue 	30 82 ce
+	Green 	50 d6 2c
+	Yellow	ef bc 0b
+	Orange	ef 71 0b
+	Purple	ac 0b ef
+	Teal	04 e9 f7
+	Pink	f5 02 97
+-->
+
+
+
+<theme>
+    <formatVersion>3</formatVersion>
+	
+	<view name="basic, detailed, system">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/box.png</path>
+			<color>d1d3d4</color>
+		</image>
+		
+		<image name="honeycomb" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/honeycomb.png</path>
+			<color>c6c6c880</color>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>8f8c8d</textColor>
+			<iconColor>8f8c8d</iconColor>
+		</helpsystem>
+		
+<!--
+		<image name="Left_Fade" extra="true">
+			<tile>false</tile>
+			<size>0.125 1</size>
+			<pos>0.0 0.0</pos>
+			<origin>0.0 0.0</origin>
+			<path>./art/fade-horizontal.png</path>
+			<color>ffffff30</color>
+		</image>
+		
+		<image name="Right_Fade" extra="true">
+			<tile>false</tile>
+			<size>-0.2 1</size>
+			<pos>1 0.0</pos>
+			<origin>0 0</origin>
+			<path>./art/fade-horizontal.png</path>
+			<color>ffffff30</color>
+		</image>
+-->
+		
+		<image name="Top_Fade" extra="true">
+			<tile>false</tile>
+			<size>1 0.125</size>
+			<pos>0.0 0.0</pos>
+			<origin>0.0 0.0</origin>
+			<path>./art/fade-vertical.png</path>
+			<color>ffffff70</color>
+		</image>
+		
+		<image name="Bottom_Fade" extra="true">
+			<tile>false</tile>
+			<size>1 -0.2</size>
+			<pos>0 1</pos>
+			<origin>0 0</origin>
+			<path>./art/fade-vertical.png</path>
+			<color>ffffff70</color>
+		</image>
+	</view>
+	
+	<view name="system">
+	
+		<image name="center_bar" extra="true">
+			<tile>false</tile>
+			<size>1 0.2702</size>
+			<pos>0 0.384</pos>
+			<origin>0 0</origin>
+			<path>./art/center_bar.png</path>
+		</image>
+
+		<image name="color_bar_top" extra="true">
+			<tile>false</tile>
+			<pos>0 0.378</pos>
+			<origin>0 0</origin>
+			<size>1 0.005</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image> 
+
+		<image name="color_bar_bottom" extra="true">
+			<tile>false</tile>
+			<pos>0 0.615</pos>
+			<origin>0 0</origin>
+			<size>1 0.005</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image> 		
+
+	</view>
+	
+	<view name="basic">
+	
+		<textlist name="gamelist">
+			<selectorColor>c4c5c6</selectorColor>
+			<selectedColor>04e9f7</selectedColor>
+			<primaryColor>726f70</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.030</fontSize>
+			<pos>0.025 0.18</pos>
+			<size>0.950 0.71</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+	</view>
+
+	<view name="detailed">
+	
+		<image name="gamelist_background" extra="true">
+			<tile>false</tile>
+			<pos>0.030 0.10</pos>
+			<origin>0 0</origin>
+			<size>0.442 0.83</size>
+			<path>./art/box.png</path>
+			<color>ffffff60</color>
+		</image>
+
+		<image name="left_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0.030 0.10</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.83</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image>
+		
+		<image name="right_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0.472 0.10</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.83</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image>
+
+		<text name="No_Image" extra="true">
+			<pos>0.690 0.371</pos>
+			<text>No Image</text>
+			<alignment>center</alignment>
+			<color>a0a0a0</color>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+		</text>			
+		
+		<image name="md_image">
+			<pos>0.737 0.371</pos>
+			<maxSize>0.476 0.466</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0 0</size>
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_genre, md_developer, md_lbl_players, md_players">
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</text>		
+		
+		<datetime name="md_releasedate">
+			<pos>0.590 0.600</pos>
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</datetime>
+
+		<text name="md_developer">
+			<size>0.220 0.037</size>
+			<pos>0.51 0.637</pos>
+			<alignment>center</alignment>
+		</text>
+<!--				
+		<image name="genre_box" extra="true">
+			<tile>false</tile>
+			<origin>0 0</origin>
+			<size>0.220 0.037</size>
+			<pos>0.51 0.65</pos>
+			<path>./art/box.png</path>
+			<color>ffffff70</color>
+		</image> 
+-->		
+		<text name="md_genre">
+			<pos>0.51 0.668</pos>
+			<size>0.220 0.034</size>
+			<alignment>center</alignment>
+		</text>
+<!--		
+		<image name="developer_box" extra="true">
+			<tile>false</tile>
+			<origin>0 0</origin>
+			<pos>0.51 0.692</pos>
+			<size>0.220 0.034</size>
+			<path>./art/box.png</path>
+			<color>ffffff70</color>
+		</image> 
+
+		<image name="metadata_divider_right" extra="true">
+			<tile>false</tile>
+			<pos>0.97 0.620</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.080</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image>		
+		
+		<image name="metadata_divider_left" extra="true">
+			<tile>false</tile>
+			<pos>0.502 0.620</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.080</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image>
+-->
+<!--
+		<image name="metadata_divider" extra="true">
+			<tile>false</tile>
+			<pos>0.737 0.620</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.080</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image>
+-->		
+		<text name="md_lbl_players">
+			<pos>0.816 0.613</pos>
+		</text>
+
+		<text name="md_players">
+			<pos>0.863 0.6031</pos>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<rating name="md_rating">
+			<pos>1 1</pos>
+			<size>0.028 0.028</size>
+			<filledPath>./art/star_filled_spacing.svg</filledPath>
+			<unfilledPath>./art/star_hollow_3_spacing.svg</unfilledPath>
+		</rating>
+		
+		<text name="md_description">
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0.46 0.19</size>
+			<pos>0.510 0.720</pos>
+		</text>
+<!--		
+		<image name="description_box" extra="true">
+			<tile>false</tile>
+			<origin>0 0</origin>
+			<size>0.46 0.19</size>
+			<pos>0.510 0.720</pos>
+			<path>./art/box.png</path>
+			<color>ffffff70</color>
+		</image> 
+-->	
+		<textlist name="gamelist">
+			<selectorColor>04e9f7</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>726f70</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.030 0.167</pos>
+			<size>0.442 0.741</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.02</horizontalMargin>
+			<fontSize>0.03</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+		<image name="md_hidden" extra="true">
+			<pos>0.806 0.678</pos>
+			<path>./art/hidden.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+		<image name="md_kidgame" extra="true">
+			<pos>0.847 0.678</pos>
+			<path>./art/kid.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+		<image name="md_favorite" extra="true">
+			<pos>0.889 0.678</pos>
+			<path>./art/favorite.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+
+		</view>	
+	
+	<view name="basic, detailed">
+	
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/box.png</path>
+			<color>d1d3d4</color>
+		</image>
+		
+		<image name="bottom_box" extra="true">
+			<tile>false</tile>
+			<pos>0 0.93</pos>
+			<origin>0 0</origin>
+			<size>1 0.07</size>
+			<path>./art/box.png</path>
+			<color>ffffff70</color>
+		</image> 
+		
+		<image name="bottom_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0 0.93</pos>
+			<origin>0 0</origin>
+			<size>1 0.005</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image> 
+
+		<image name="top" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.20</size>
+			<path>./art/GamelistTop.png</path>
+			<color>ffffff</color>
+		</image> 
+		
+		<image name="top_honeycomb" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.1048</size>
+			<path>./art/honeycomb.png</path>
+			<color>ffffff60</color>
+		</image>
+		
+		<image name="top_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0 0.1048</pos>
+			<origin>0 0</origin>
+			<size>1 0.005</size>
+			<path>./art/box.png</path>
+			<color>04e9f7</color>
+		</image> 
+
+		<image name="logo">
+			<pos>0.05 0.009</pos>
+			<maxSize>0.35 0.09</maxSize>
+			<origin>0.0 0.0</origin>
+		</image>
+	
+	</view>	
+
+	
+</theme>

@@ -1,0 +1,77 @@
+<theme>
+    <formatVersion>3</formatVersion>
+    <include>./../luminous.xml</include>
+
+	<view name="system">
+
+		<image name="logo">
+			<path>./art/system.svg</path>
+        </image>
+		
+	</view>
+
+	<view name="basic, detailed">
+
+		<image name="logo">
+			<path>./art/system.svg</path>
+		</image>
+			
+	</view>
+
+	<view name="basic">		
+	</view>
+
+	<view name="detailed">
+	
+		<image name="md_image">
+			<pos>0.746 0.38</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<datetime name="md_releasedate">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<text name="md_lbl_releasedate, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_players, md_players">
+			<pos>1 1</pos>
+		</text>	
+		
+		<image name="metadata_divider" extra="true">
+			<tile>false</tile>
+			<pos>0.737 0.620</pos>
+			<origin>0 0</origin>
+			<size>0.003 0.080</size>
+			<color>04e9f700</color>
+		</image>
+		
+		<image name="md_hidden">
+			<pos>0.806 0.678</pos>
+			<path>./art/hidden.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+		<image name="md_kidgame">
+			<pos>0.847 0.678</pos>
+			<path>./art/kid.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+		<image name="md_favorite">
+			<pos>0.889 0.678</pos>
+			<path>./art/favorite.svg</path>
+			<maxSize>0.036 0.036</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>726f70</color>
+		</image>
+		
+		<text name="md_description">
+			<fontSize>0.03</fontSize>
+			<size>0.404 0.3</size>
+			<pos>0.543 0.60</pos>
+		</text>
+	</view>
+	
+</theme>
